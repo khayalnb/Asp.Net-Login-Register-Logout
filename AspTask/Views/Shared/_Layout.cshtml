@@ -1,4 +1,4 @@
-﻿@model LoginVM
+﻿
 <!DOCTYPE html>
 <html lang="en">
 
@@ -147,7 +147,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                @if (!User.Identity.AuthenticationType)
+                                @if (!User.Identity.IsAuthenticated)
                                 {
                                     <li class="nav-item my-auto search">
                                         <i class="fas fa-search" id="search"></i>
